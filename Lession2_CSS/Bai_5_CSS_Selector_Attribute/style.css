@@ -1,0 +1,11 @@
+/* [href] {
+  color: red;
+} */
+
+a[href] {
+  color: red;
+}
+
+p[href] {
+  color: blue;
+}

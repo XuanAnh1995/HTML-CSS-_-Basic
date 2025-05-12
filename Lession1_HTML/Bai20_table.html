@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+    Table: Bảng
+        Sử dụng cặp thẻ <table></table> để vẽ bảng
+
+        <tr></tr>   :  Table Row    : Đại diện cho 1 hàng trong bảng HTML
+        <td></td>   :  Table Data   : Định nghĩa 1 ô dữ liệu trong 1 bảng
+        <th></th>   : Table Header  : Định nghĩa 1 ô tiêu đề trong bảng
+
+        <thead></thead>     :   Table header: Định nghĩa phần đầu của bảng 
+                                Thường chứa các ô tiêu đề ("th") của các cột trong bảng
+
+        <tbody></tbody>     :   Định nghĩa phần thân của bảng
+                                Thường chứa các thẻ "tr" và các ô dữ liệu "td" tương ứng
+
+        <tfoot></tfoot>     :   Định nghĩa phần cuối của bảng
+                                Thường chứa các ô chú thích, tổng kết, hoặc thông tin cuối cùng về bảng
+
+
+        Table: Colspan & Rowspan
+            Colspan : Chỉ định phần tử chiếm bao nhiêu cột
+            Rowspan : Chỉ định phần tử chiếm bao nhiêu dòng
+    -->
+    <h1>Học Table buổi 1</h1>
+
+    <table border="1">
+      <tr>
+        <th>STT</th>
+        <th>Element</th>
+        <th>Ý nghĩa</th>
+        <th>Chi tiết</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>tr</td>
+        <td>Table Row</td>
+        <td>Định nghĩa 1 ô dữ liệu trong 1 bảng</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>td</td>
+        <td>Table Data</td>
+        <td>Đại diện cho 1 hàng trong bảng HTML</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>th</td>
+        <td>Table Header</td>
+        <td>Định nghĩa 1 ô tiêu đề trong bảng</td>
+      </tr>
+    </table>
+    <hr />
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Tên sản phẩm</th>
+          <th>Giá</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Áo phông</td>
+          <td>100.000 vnđ</td>
+        </tr>
+        <tr>
+          <td>Quần jean</td>
+          <td>200.000 vnđ</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td><b>Tổng cộng</b></td>
+          <td>300.000 vnđ</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <hr />
+    <h1>Học Table buổi 2</h1>
+
+    <table border="1">
+      <tr>
+        <th>Tên sản phẩm</th>
+        <th colspan="2">Mô tả</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Áo phông</td>
+        <td>Chất Liệu</td>
+        <td>Bạt</td>
+      </tr>
+      <tr>
+        <td>Kích thước</td>
+        <td>M, L, XL</td>
+      </tr>
+      <tr>
+        <td>Quần jean</td>
+        <td colspan="2">Quần jean cao cấp dễ dàng phối đồ</td>
+      </tr>
+    </table>
+
+    <hr />
+    <h1>Bài tập Table</h1>
+    <table border="1">
+      <!-- thead>tr>th*3 -->
+      <thead>
+        <tr>
+          <th>Tên sản phẩm</th>
+          <th>Giá sản phẩm</th>
+          <th>Số lượng còn lại</th>
+        </tr>
+      </thead>
+      <!-- tbody>tr*3>td*3 -->
+      <tbody>
+        <tr>
+          <td>Áo thun nam</td>
+          <td>100.000 vnd</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Quần jean nữ</td>
+          <td>200.000 vnd</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Giày thể thao</td>
+          <td>300.000 vnd</td>
+          <td>30</td>
+        </tr>
+      </tbody>
+      <!-- tfoot>tr>td*2 -->
+      <tfoot>
+        <tr>
+          <td>Remark</td>
+          <td colspan="2">Chỉ thống kê sản phẩm trong kho</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

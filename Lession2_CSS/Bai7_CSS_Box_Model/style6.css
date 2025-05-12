@@ -1,0 +1,19 @@
+/* Box Model: box-sizing
+    box-sizing:     content-box, border-box
+    Thực tế dự án ta sử dụng border-box thường xuyên hơn, để kích thước khớp với thiết kế, tránh
+    phải tính toán lại phần nội dung
+*/
+.box {
+  width: 100px;
+  height: 150px;
+  padding: 20px;
+  border: 10px solid red;
+  margin-bottom: 10px;
+
+  /* Thuộc tính box-sizing mặc định */
+  box-sizing: content-box;
+}
+
+.box2 {
+  box-sizing: border-box;
+}

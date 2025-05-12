@@ -1,0 +1,79 @@
+/* CSS Box Model */
+
+/**
+ * Trình duyệt luôn coi mỗi phần tử là 1 box -> hộp chữ nhật
+    Bao gồm: 
+        Nội dung: (width, height): hình ảnh, text, video, ...
+        padding:    ->  Khoảng đệm nội dung và viền (Không chứa nội dung)
+        border:     ->  Viền của phần tử (viền nét liền, đứt, ...)
+        margin:     ->  Khoảng cách với các phần tử liền kề khác
+
+    Kích thước cao * rộng 1 phần tử = content + padding + border (Không bao gồm margin)
+
+ */
+
+div {
+  /* width: 100px;
+  height: 100px;
+  color: yellow;
+  background-color: red; */
+  /* padding: 20px; */
+  /* padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px; */
+
+  /* Trên dưới - trái phải  */
+  /* padding: 20px 30px; */
+
+  /* Trên - trái phải - dưới*/
+  /* padding: 20px 30px 40px; */
+
+  /* Trên - phải -dưới - trái */
+  /* padding: 20px 30px 40px 50px; */
+
+  /* Viền */
+  /* border: 10px solid blue; */
+  /* border-top: 10px solid pink;
+  border-right: 5px dashed blue;
+  border-bottom: 5px double yellow;
+  border-left: 15px inset orangered; */
+  /* border-width: 15px 10px 20px 40px;
+  border-style: solid;
+  border-color: pink; */
+
+  /* border-radius: 20px; */
+  /* border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 30px; */
+}
+
+/* Box Model - Border - Viền
+  Cú pháp viết tắt:   Syntax: <line-width> || <line-style> || <color>
+
+  Cách viết đầy đủ:
+      border-width:
+      border-style:
+      border-color: */
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  padding: 20px;
+}
+
+.box1 {
+  border: 10px solid blue;
+}
+
+.box2 {
+  border: 20px inset rgb(255, 0, 204);
+  margin-left: 160px;
+}
+
+.box3 {
+  border: 30px double yellow;
+  margin-left: 340px;
+}

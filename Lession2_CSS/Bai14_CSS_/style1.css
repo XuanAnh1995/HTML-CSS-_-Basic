@@ -1,0 +1,22 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background: url(./bg/ava.png) center/cover;
+  /* clip-path: circle(50% at 50% 50%); */
+  /* clip-path: circle(100px); */
+  /* 
+    Tính toán bán kính của hình tròn
+    radius = (50% * max(width, height))
+    Xác định giá trị max từ kích thước đã cho, Trong th này, .box có kích thước width: 200px và height: 500px 
+    radius = 50% * 500px = 250px
+    */
+
+  /* Dịch tâm đường tròn theo x, y */
+  /* clip-path: circle(40% at 50% 40%); */
+  clip-path: inset(20px);
+  clip-path: inset(20px 50px);
+  clip-path: inset(20px 50px 80px);
+  clip-path: inset(20px 50px 80px 100px);
+
+  clip-path: inset(20px round 15px);
+}

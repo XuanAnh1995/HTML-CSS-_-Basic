@@ -1,0 +1,75 @@
+/* 
+Unit
+Đơn vị tương đối: vw, vh 
+ */
+/* .parent {
+  width: 80vw;
+  height: 80vh;
+  background-color: yellow;
+}
+
+.child {
+  width: 50vw;
+  height: 50vh;
+  background-color: aqua;
+} */
+
+/* em : Kích thước gấp n lần font chữ hiện tai (có kế thừa)
+*/
+
+/* TH1: Thẻ cha và thẻ con không có font-size 
+-> lấy kích thước từ font-size của  root(html) */
+
+/* .child {
+  font-size: 10px;
+  width: 10em;
+  // Nếu font-size: 10px thì width: 100px
+  height: 10em;
+  // Nếu font-size: 10px thì height : 100px
+  background-color: pink;
+} */
+
+/* 
+TH2: Thẻ cha có font-size tuyệt đối
+ */
+
+/* .parent {
+  font-size: 30px;
+} */
+
+/* 
+TH3: Cả thẻ cha và con đều đặt font-size -> ưu tiên size hiện tại của chính nó
+ */
+
+/* 
+ TH4: Thẻ cha có font-size tương đối
+ -> Thẻ cha sẽ lấy kích thước mặc định từ trình duyệt (thẻ html gốc)
+ -> Thẻ con tiếp tục kế thừa từ thẻ cha
+ */
+
+/* .parent {
+  font-size: 2em;
+} */
+
+/* .child {
+  width: 10em;
+  // 16 x 2 x 10 = 320px
+  height: 10em;
+  // 16 x 2 x 10 = 320px
+  background-color: red;
+} */
+
+.parent {
+  font-size: 10px;
+}
+
+.child {
+  /* 10px --> 2*10 = 20px */
+  /* 20px --> 2*20 = 40px */
+  /* 40px --> 2*40 = 80px */
+  /* 80px --> 2*80 = 160px */
+  font-size: 2em;
+  width: 2em;
+  height: 2em;
+  background-color: violet;
+}

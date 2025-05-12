@@ -1,0 +1,35 @@
+/* p:first-child {
+  color: red;
+  font-size: 30px;
+} */
+
+/*p con cuối cùng*/
+/* p:last-child {
+  color: blue;
+  font-size: 35px;
+} */
+
+/*Thẻ con thứ n*/
+/* p:nth-child(2) {
+  color: pink;
+} */
+
+/*even, odd, bước nhảy bất kỳ*/
+/* p:nth-child(even) {
+  color: red;
+} */
+
+/* p:first-of-type {
+  color: aqua;
+  font-size: 30px;
+}
+
+h2:last-of-type {
+  color: orangered;
+  font-size: 30px;
+} */
+
+h2 {
+  color: orangered;
+  font-size: 30px;
+}

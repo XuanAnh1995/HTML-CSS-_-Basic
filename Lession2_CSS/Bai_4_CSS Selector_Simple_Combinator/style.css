@@ -1,0 +1,67 @@
+/* p {
+  color: red;
+  font-size: 20px;
+} */
+
+/* h1 {
+  color: blue;
+} */
+
+/* #id */
+/* #doan_van_2 {
+  color: aqua;
+} */
+
+/* .class */
+/* .demo {
+  color: orange;
+  font-size: 40px;
+} */
+
+/* .item_ul_1 {
+  list-style: none;
+} */
+
+/* p,
+.demo_1.demo_2,
+h3#line_4 {
+  color: red;
+} */
+
+h1 {
+  text-align: center;
+}
+
+/* div p {
+  color: blue;
+}
+
+.loi_chuc p {
+  font-size: 30px;
+} */
+
+/* div > p {
+  color: orange;
+}
+
+blockquote p {
+  color: red;
+} */
+
+/* h1 + h2 {
+  color: red;
+  font-size: 30px;
+}
+
+.demo_2 + h4 {
+  color: blue;
+  font-size: 30px;
+} */
+
+h1 ~ h4 {
+  color: blue;
+}
+
+div ~ div {
+  color: red;
+}

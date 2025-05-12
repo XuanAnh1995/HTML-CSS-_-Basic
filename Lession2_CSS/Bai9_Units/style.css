@@ -1,0 +1,35 @@
+/* 
+CSS Units: 
+    Đơn vị trong CSS
+
+    Đơn vị tuyệt đối: Absolute Lengths: 
+    px (pixels) Picture Element điểm ảnh là đơn vị cơ bản để đo kích thước 1 hình ảnh kỹ thuật số
+
+    Đơn vị tương đối: Relative lengths
+    % 
+ */
+
+h2 {
+  font-size: 30px;
+  width: 120px;
+  height: 80px;
+  background-color: yellow;
+}
+
+p {
+  width: 50%;
+  background-color: blue;
+}
+
+.box {
+  background-color: blue;
+  height: 200px;
+  width: 50%;
+}
+
+.box_child {
+  background-color: yellow;
+  height: 30%;
+  margin: 30px;
+  width: 50%;
+}

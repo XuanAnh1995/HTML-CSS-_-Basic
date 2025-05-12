@@ -1,0 +1,28 @@
+.box {
+  width: 500px;
+  height: 300px;
+  border: 4px dotted red;
+  background-image: url(./bg/unnamed.png);
+
+  /* background-size: contain; */
+  /*  
+      Ảnh vừa khung hình
+      Giữ nguyên tỉ lệ ảnh
+      Không bị mất ảnh
+      Nếu còn khoảng trống, ảnh sẽ bị lặp lại
+  */
+
+  /* background-size: cover; */
+  /* 
+        Ảnh vừa khớp khung hình
+        Giữ nguyên tỉ lệ ảnh (0 bị méo)
+        Có thể mất 1 phần ảnh
+        Không bị lặp lại
+  */
+
+  background-size: 200px;
+  /* background-repeat: no-repeat; */
+  background-size: 100%;
+  background-size: 100% 100%;
+  background-size: 200px 200px;
+}

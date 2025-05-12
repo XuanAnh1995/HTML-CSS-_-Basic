@@ -1,0 +1,76 @@
+/* 
+Font chữ trong CSS
+
+Thuộc tính text-shadow bóng đổ cho text
+text-shadow: horizontal vertical Blur Color
+    Trong đó:
+        horizontal:     trục x - ngang  - hướng trái sang phải
+        vertical  :     trục y - đứng  - hường đi xuống
+        Blur:           độ nhòe
+        Color:          Màu sắc
+ */
+
+/* h1 {
+  text-shadow: 0px -20px 2px rgba(255, 0, 0, 0.396);
+} */
+
+/* Thuộc tính overflow
+        : visible(default):     Thuộc tính mặc định : hiển thị nội dung kể cả vượt box chứa
+        : hidden                Ẩn nội dung: Khi nội dung vượt box chứa
+        : scroll                Tạo thanh cuộn: Luôn hiển thị vùng thanh cuộn
+        : auto                  1. Nếu nội dung ngắn --> Không có scroll bar
+                                2. Nếu nội dung vượt box chưa --> Tự động sinh ra scroll bar
+ */
+.box {
+  width: 300px;
+  height: 200px;
+  background-color: yellow;
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+/* Tối ưu hóa thanh cuộn scroll bar */
+/* overscroll-behavior: Là thuộc tính CSS được sử dụng để điều chỉnh cách trình duyệt xử lý 
+    sự kiện "overscrolling", tức là khi người dùng cuộn trang đến khi không còn nội dung để cuộn nữa
+*/
+
+/* custom scrollbar css: Tùy biến giúp thanh cuốn trông đẹp mắt hơn */
+/* width */
+.box::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.box::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.box::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.box::-webkit-scrollbar-thumb:hover {
+  background: red;
+}
+
+/* Thuộc tính text-overflow */
+h1 {
+  width: 200px;
+  white-space: nowrap;
+  background-color: pink;
+  overflow: hidden; /* ẩn nội dung thừa */
+  text-overflow: ellipsis; /* Tạo dấu ... */
+}
+
+/* Làm dấu ... ở dòng thứ 2 , 3, ... */
+h2 {
+  background-color: aqua;
+  overflow: hidden; /* ẩn nội dung thừa */
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}

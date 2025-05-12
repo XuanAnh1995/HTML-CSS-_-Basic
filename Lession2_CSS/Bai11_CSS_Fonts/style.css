@@ -1,0 +1,22 @@
+/* body {
+  text-align: center;
+} */
+
+p {
+  /* Thuộc tính letter-spacing tăng giảm khoảng cách giữa các ký tự */
+  /* letter-spacing: 20px; */
+
+  /* Thuộc tinh word-spacing tăng giảm khoảng cách giữa các từ */
+  /* word-spacing: 50px; */
+
+  /* Thuộc tinh text-align căn text : chỉ căn text so với bõ chứa nó*/
+  /* text-align: left; */
+  /* text-align: justify; */
+  /* text-align: right; */
+  /* text-align: center; */
+}
+
+.home {
+  text-align: center;
+  display: block;
+}

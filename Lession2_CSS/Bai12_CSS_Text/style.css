@@ -1,0 +1,32 @@
+/* 
+Thuộc tính text-decoration
+    text-decoration: none;              // Bỏ gạch chân
+    text-decoration: underline;         // Thêm gạch chân
+    text-decoration: line-through       // Thêm gạch ngang
+    text-decoration: overline           // Gạch trên đầu
+
+    // Có thể định kiểu của dấu gạch, màu sắc, kích thước 
+    text-decoration: underline dotted blue 5px;
+
+Thuộc tính text-indent thụt lề
+    text-indent: -10px;
+    text-indent: 10px;
+
+Thuộc tính text-transform
+ */
+
+strong {
+  text-decoration: none;
+  /* text-decoration: underline; */
+  /* text-decoration: line-through; */
+  /* text-decoration: overline; */
+
+  text-decoration: underline dotted blue 5px;
+}
+
+.line {
+  text-indent: 40px;
+  /* text-transform: uppercase; */
+  /* text-transform: lowercase; */
+  text-transform: capitalize;
+}

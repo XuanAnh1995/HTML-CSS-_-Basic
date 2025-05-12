@@ -1,0 +1,68 @@
+.box {
+  width: 200px;
+  height: 200px;
+  border: 50px dotted yellow;
+  padding: 50px;
+
+  /* background-color: cyan; */
+  /* background-image: url(./bg/unnamed.png); */
+
+  /* background-position : VỊ TRÍ BẮT ĐẦU ĐẶT ẢNH  */
+  /* background-position: top right;
+  background-position: top left;
+  background-position: bottom left;
+  background-position: bottom right;
+  background-position: left;
+  background-position: right;
+  background-position: top;
+  background-position: bottom;
+  background-position: center; */
+
+  /* background-position : ĐƠN VỊ %  */
+  /* background-position: 0 100%; */
+
+  /* background-position : ĐƠN VỊ TUYỆT ĐỐI  */
+  /* background-position: 0 100px; */
+
+  /* bg-size : Mặc định hiển thị ảnh theo kích thước thật, tỷ lệ 1 : 1*/
+  /* background-size: contain; */
+  /* background-size: cover; */
+
+  /* bg-repeat: */
+  /* background-repeat: no-repeat; */
+
+  /* bg-origin: Xác định gốc bức ảnh đặt vị trí nào */
+  /* background-origin: padding-box; */
+  /* background-origin: content-box; */
+  /* background-origin: border-box; */
+
+  /* bg-clip:  */
+  /* ảnh từ border hất vào trong */
+  /* background-clip: border-box; */
+
+  /* ảnh từ padding hất vào trong */
+  /* background-clip: padding-box; */
+
+  /* ảnh từ content hất vào trong */
+  /* background-clip: content-box; */
+
+  /* bg-attachment: Mặc định ảnh cuốn theo thanh cuộn */
+  /* background-attachment: scroll; */
+
+  /* bg-attachment: fixed ảnh cố định khi kéo thanh cuộn */
+  /* background-attachment: fixed; */
+
+  /* bg-attachment: local ảnh cố định khi kéo thanh cuộn trong box con */
+  /* background-attachment: local; */
+
+  /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+
+  background: red url(./bg/anh_nen.jpg);
+  background: red url(./bg/anh_nen.jpg) left;
+  background: red url(./bg/anh_nen.jpg) left / contain;
+  background: red url(./bg/anh_nen.jpg) left / contain no-repeat;
+  background: red url(./bg/anh_nen.jpg) left / contain no-repeat padding-box;
+  background: red url(./bg/anh_nen.jpg) left / contain no-repeat border-box;
+  background: red url(./bg/anh_nen.jpg) left / contain no-repeat border-box
+    scroll;
+}

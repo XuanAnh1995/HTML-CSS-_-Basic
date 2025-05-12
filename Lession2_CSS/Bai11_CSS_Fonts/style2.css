@@ -1,0 +1,16 @@
+/* Font awesome: Tạo hiệu ứng biểu tượng đẹp */
+
+li {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.fa-brands,
+.fa-solid {
+  color: pink;
+  margin-right: 15px;
+}
+
+.fa-facebook {
+  color: blue;
+}
